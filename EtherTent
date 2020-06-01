@@ -1,0 +1,34 @@
+pipeline {
+    agent none 
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build under progress..'
+            }
+        }
+		
+        stage('Unit Testing') {
+            steps {
+                echo 'Unit Testing'
+            }
+        }
+		
+		stage('Integration Testing') {
+            steps {
+                echo 'Integration Testing'
+            }
+        }
+		
+		stage('Performance Testing') {
+            steps {
+                echo 'Performance Testing'
+            }
+        }
+		
+		stage('Deploy') {
+            steps {
+                echo 'Deploy under progress..'
+            }
+        }
+    }
+}
